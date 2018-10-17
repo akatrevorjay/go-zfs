@@ -1,0 +1,8 @@
+hash: 84691e7b420ecdcb2ea137c7e89153431fccd0e0db78d6f5ad55af15455703e8
+updated: 2018-10-16T17:09:22.797162405-07:00
+imports:
+- name: github.com/chronos-tachyon/go-uuid
+  version: 2d44b46c5c3a2bf11650fcd556efd28e0e4f7a09
+testImports:
+- name: github.com/mistifyio/go-zfs
+  version: cdc0f941c4d0e0e94d85348285568d921891e138

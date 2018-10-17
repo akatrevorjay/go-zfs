@@ -1,0 +1,6 @@
+package: github.com/calmh/zfs
+import:
+- package: github.com/chronos-tachyon/go-uuid
+testImport:
+- package: github.com/mistifyio/go-zfs
+  version: ~2.1.1
