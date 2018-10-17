@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"code.google.com/p/go-uuid/uuid"
+	"github.com/chronos-tachyon/go-uuid"
 )
 
 type command struct {
@@ -36,7 +36,8 @@ func (c *command) Run(arg ...string) ([][]string, error) {
 	}
 	cmd.Stderr = &stderr
 
-	id := uuid.New()
+	uid := uuid.New()
+	id := uid.HashLikeString()
 	joinedArgs := strings.Join(cmd.Args, " ")
 
 	logger.Log([]string{"ID:" + id, "START", joinedArgs})
